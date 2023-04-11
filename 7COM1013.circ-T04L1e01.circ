@@ -102,75 +102,59 @@
       <circ-port height="10" pin="640,220" width="10" x="85" y="75"/>
       <circ-anchor facing="east" height="6" width="6" x="87" y="77"/>
     </appear>
-    <wire from="(270,240)" to="(330,240)"/>
-    <wire from="(130,250)" to="(320,250)"/>
-    <wire from="(200,160)" to="(200,170)"/>
-    <wire from="(280,220)" to="(330,220)"/>
-    <wire from="(460,200)" to="(460,230)"/>
-    <wire from="(380,200)" to="(380,230)"/>
-    <wire from="(430,230)" to="(460,230)"/>
-    <wire from="(360,230)" to="(380,230)"/>
-    <wire from="(380,230)" to="(400,230)"/>
-    <wire from="(280,180)" to="(280,220)"/>
-    <wire from="(200,170)" to="(220,170)"/>
-    <wire from="(200,190)" to="(220,190)"/>
-    <wire from="(140,220)" to="(270,220)"/>
-    <wire from="(610,220)" to="(610,230)"/>
-    <wire from="(460,230)" to="(460,360)"/>
-    <wire from="(320,250)" to="(320,260)"/>
-    <wire from="(340,250)" to="(340,260)"/>
-    <wire from="(270,220)" to="(270,240)"/>
-    <wire from="(410,250)" to="(410,330)"/>
-    <wire from="(280,150)" to="(280,180)"/>
-    <wire from="(260,180)" to="(280,180)"/>
-    <wire from="(320,260)" to="(340,260)"/>
-    <wire from="(200,190)" to="(200,360)"/>
-    <wire from="(130,330)" to="(410,330)"/>
-    <wire from="(610,220)" to="(640,220)"/>
-    <wire from="(460,230)" to="(610,230)"/>
-    <wire from="(390,240)" to="(400,240)"/>
-    <wire from="(390,240)" to="(390,290)"/>
-    <wire from="(130,290)" to="(390,290)"/>
-    <wire from="(200,360)" to="(460,360)"/>
-    <comp lib="0" loc="(200,160)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="0" loc="(460,200)" name="Probe">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="0" loc="(130,330)" name="Pin">
+    <wire from="(160,160)" to="(160,290)"/>
+    <wire from="(430,220)" to="(430,290)"/>
+    <wire from="(210,150)" to="(210,160)"/>
+    <wire from="(220,160)" to="(220,170)"/>
+    <wire from="(130,330)" to="(180,330)"/>
+    <wire from="(170,110)" to="(220,110)"/>
+    <wire from="(370,230)" to="(370,250)"/>
+    <wire from="(130,250)" to="(370,250)"/>
+    <wire from="(170,90)" to="(170,110)"/>
+    <wire from="(270,110)" to="(270,140)"/>
+    <wire from="(150,150)" to="(150,180)"/>
+    <wire from="(130,290)" to="(160,290)"/>
+    <wire from="(460,230)" to="(460,330)"/>
+    <wire from="(500,110)" to="(500,210)"/>
+    <wire from="(140,220)" to="(360,220)"/>
+    <wire from="(430,220)" to="(450,220)"/>
+    <wire from="(180,330)" to="(460,330)"/>
+    <wire from="(480,210)" to="(500,210)"/>
+    <wire from="(160,160)" to="(170,160)"/>
+    <wire from="(300,80)" to="(300,130)"/>
+    <wire from="(350,150)" to="(350,200)"/>
+    <wire from="(390,210)" to="(450,210)"/>
+    <wire from="(580,210)" to="(580,220)"/>
+    <wire from="(220,150)" to="(220,160)"/>
+    <wire from="(580,220)" to="(640,220)"/>
+    <wire from="(300,170)" to="(300,180)"/>
+    <wire from="(240,160)" to="(280,160)"/>
+    <wire from="(220,110)" to="(220,140)"/>
+    <wire from="(270,110)" to="(500,110)"/>
+    <wire from="(180,170)" to="(180,330)"/>
+    <wire from="(320,150)" to="(350,150)"/>
+    <wire from="(150,180)" to="(300,180)"/>
+    <wire from="(150,150)" to="(170,150)"/>
+    <wire from="(160,290)" to="(430,290)"/>
+    <wire from="(270,140)" to="(280,140)"/>
+    <wire from="(350,200)" to="(360,200)"/>
+    <wire from="(210,160)" to="(220,160)"/>
+    <wire from="(200,150)" to="(210,150)"/>
+    <wire from="(500,210)" to="(580,210)"/>
+    <comp lib="0" loc="(130,250)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="ClocK"/>
+      <a name="label" val="Load"/>
     </comp>
-    <comp lib="0" loc="(130,290)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="Enable"/>
-    </comp>
-    <comp lib="0" loc="(380,200)" name="Probe">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="2" loc="(360,230)" name="Multiplexer">
-      <a name="width" val="4"/>
+    <comp lib="0" loc="(240,160)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+      <a name="appear" val="center"/>
     </comp>
     <comp lib="0" loc="(140,220)" name="Pin">
       <a name="width" val="4"/>
       <a name="tristate" val="false"/>
       <a name="label" val="INDATA"/>
-    </comp>
-    <comp lib="0" loc="(280,150)" name="Probe">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="3" loc="(260,180)" name="Adder">
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="4" loc="(430,230)" name="Register">
-      <a name="width" val="4"/>
-      <a name="trigger" val="falling"/>
-    </comp>
-    <comp lib="0" loc="(130,250)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="Load"/>
     </comp>
     <comp lib="0" loc="(640,220)" name="Pin">
       <a name="facing" val="west"/>
@@ -180,5 +164,31 @@
       <a name="label" val="OUTDATA"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="0" loc="(130,290)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Enable"/>
+    </comp>
+    <comp lib="0" loc="(170,90)" name="Ground">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="4" loc="(480,210)" name="Register">
+      <a name="width" val="4"/>
+      <a name="trigger" val="falling"/>
+    </comp>
+    <comp lib="0" loc="(130,330)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="ClocK"/>
+    </comp>
+    <comp lib="4" loc="(200,150)" name="Register">
+      <a name="width" val="1"/>
+      <a name="trigger" val="falling"/>
+    </comp>
+    <comp lib="2" loc="(390,210)" name="Multiplexer">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="3" loc="(320,150)" name="Adder">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(300,80)" name="Power"/>
   </circuit>
 </project>
